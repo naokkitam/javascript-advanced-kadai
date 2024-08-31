@@ -85,9 +85,8 @@ const rankCheck = score => {
 // ゲームを終了
 const gameOver = id => {
   clearInterval(id);
-
-  typedfield.textContent = '';
-  untypedfield.textContent = 'タイムアップ';
+  
+  wrap.textContent = 'タイムアップ！';
 
   setTimeout(()=> {
     const result = confirm(rankCheck(score));
